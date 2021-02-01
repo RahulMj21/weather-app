@@ -470,8 +470,9 @@ header {
 }
 
 .form {
+  max-width: 100%;
   position: relative;
-  margin: 6.8rem 0 3rem 10rem;
+  margin: 6.8rem auto 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,6 +481,7 @@ header {
 
 .form .search-bar {
   width: 35rem;
+  max-width: 100%;
   padding: 1rem 2rem;
   border: none;
   background: var(--primary-color);
