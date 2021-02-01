@@ -60,7 +60,7 @@ submit.addEventListener("click", showData);
 async function showData(e) {
   e.preventDefault();
   const cityName = searchBar.value;
-  const api = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=5e556f4aa4675b20ac13d04112deb0d7`;
+  const api = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=5e556f4aa4675b20ac13d04112deb0d7`;
 
   if (cityName != "") {
     try {

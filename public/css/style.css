@@ -444,7 +444,7 @@ header {
 
 .main {
   position: absolute;
-  height: 100%;
+  max-height: 100vh;
   width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,10 +457,17 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
+  margin-top: -10rem;
 }
 
 .main img {
   max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -472,11 +479,13 @@ header {
 .form {
   max-width: 100%;
   position: relative;
-  margin: 6.8rem auto 10rem;
+  margin: 6.8rem 3rem 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: 10000;
+  -webkit-transform: translateX(43px);
+          transform: translateX(43px);
 }
 
 .form .search-bar {
@@ -489,6 +498,7 @@ header {
   border-radius: 3rem;
   font-size: 1.7rem;
   outline: none;
+  margin: auto;
 }
 
 .form .submit {
